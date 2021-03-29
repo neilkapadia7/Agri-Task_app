@@ -25,7 +25,7 @@ const HeroSection = () => {
             <div className='hero-section-padding'>
                 <h2 className='page-title'>{page_title}</h2>
                 {location.pathname === '/purchase' && <Row1 /> }
-                {rows && <>
+                {rows && location.pathname === '/purchase' && <>
                         <Row2 />
                         <Details />
                         <Row3 heading={heading} data={data}/>
