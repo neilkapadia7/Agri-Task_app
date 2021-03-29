@@ -1,7 +1,7 @@
 import React from 'react'
 import Box1 from './Box1'
 
-const Row1 = () => {
+const Row1 = () => {    
     return (
         <div className='row1'>
             <Box1 title='Pending'/>

@@ -20,15 +20,14 @@ const TableRow = ({data}) => {
         </tr>
        
         {isModalVisible ? (
-        <center>
-        <div class="modal" id="modal">
+       
+        <div className="modal" id="modal">
             <h2>{data.category}</h2>
-            <div class="content"><br /><strong>Description :</strong> {data.product_description} <br /><br /><br /> <strong>Quantity :</strong> {data.quantity}<br /></div>
-            <div class="actions">
-                <button class="toggle-button" onClick={() => setIsModalVisible(false)}>Close</button>
+            <div className="content"><br /><strong>Description :</strong> {data.product_description} <br /><br /><br /> <strong>Quantity :</strong> {data.quantity}<br /></div>
+            <div className="actions">
+                <button className="toggle-button" onClick={() => setIsModalVisible(false)}>Close</button>
             </div>
         </div>
-        </center>
         ) : null}
         </>
     )

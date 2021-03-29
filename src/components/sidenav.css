@@ -1,7 +1,9 @@
 .sidenav-div {
-  width: 450px;
+  width: 350px;
   height: auto;
   background-color: #0046fe;
+  display: table;
+  min-height: 100vh;
 }
 .sidenav-logo {
   font-size: 22px;
@@ -35,5 +37,21 @@
 .sidenav-element li a:hover {
   background-color: #ffffff;
   color: #0046fe;
+  transition: 0.2s;
+}
+.sidenav-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+  padding-inline-start: 0px;
+}
+.sidenav-bottom li {
+  padding-inline-start: 0px;
+}
+
+.sidenav-bottom li:hover {
+  background-color: #0046fe;
+  color: #ffffff;
   transition: 0.2s;
 }
