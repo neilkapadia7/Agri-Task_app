@@ -1,7 +1,10 @@
 import React from 'react'
 import { CSVLink, CSVDownload } from 'react-csv'
+import {useDispatch} from 'react-redux'
 
 const Box3 = ({title, icon, image, data, headers}) => {
+    const dispatch = useDispatch()
+    
     return (
         <div className='box3'>
             {image && (
@@ -12,7 +15,7 @@ const Box3 = ({title, icon, image, data, headers}) => {
                 <CSVLink data={data} headers={headers}><img src={icon} className='box3-icon' alt='icon'/></CSVLink>
             )}
             {icon && !data && (
-                <img src={icon} className='box3-icon' alt='icon'/>
+                <img src={icon} className='box3-icon' alt='icon' onClick={() => dispatch({type: 'TOGGLE_ROW'})}/>
             )}
         </div>
     )

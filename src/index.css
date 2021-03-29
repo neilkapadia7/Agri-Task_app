@@ -164,3 +164,11 @@ td img {
   width: 20px !important;
   cursor: pointer !important;
 }
+
+.row-details {
+  width: 97%;
+  padding: 20px;
+  background-color: #ececec;
+  margin: 10px 0px !important;
+  text-align: center;
+}

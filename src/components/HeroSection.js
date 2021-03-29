@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import Row1 from './Row1'
 import Row2 from './Row2'
 import Row3 from './Row3'
+import Details from './Details'
 import Table from './Table'
 import { useLocation} from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
@@ -24,9 +25,9 @@ const HeroSection = () => {
             <div className='hero-section-padding'>
                 <h2 className='page-title'>{page_title}</h2>
                 {location.pathname === '/purchase' && <Row1 /> }
-                {rows &&
-                    <>
+                {rows && <>
                         <Row2 />
+                        <Details />
                         <Row3 heading={heading} data={data}/>
                         <Table heading={heading} data={data} />
                     </>
@@ -35,5 +36,4 @@ const HeroSection = () => {
         </div>
     )
 }
-
 export default HeroSection
