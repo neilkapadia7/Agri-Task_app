@@ -20,24 +20,27 @@
   margin-block-end: 0;
   padding-inline-start: 0px;
 }
-.sidenav-element li,
-.sidenav-element li a {
+.sidenav-element li {
   padding: 30px 0px;
   opacity: 0.95;
   font-size: 18px;
   font-weight: 400;
-  color: #ffffff;
+
   text-align: center;
   border-radius: 20px 30px 30px 20px;
   letter-spacing: 1px;
   cursor: pointer;
+}
+.sidenav-element li a {
+  color: #ffffff;
   text-decoration: none;
 }
-.sidenav-element li:hover,
-.sidenav-element li a:hover {
+.sidenav-element li:hover {
   background-color: #ffffff;
-  color: #0046fe;
   transition: 0.2s;
+}
+.sidenav-element li:hover a {
+  color: #0046fe;
 }
 .sidenav-bottom {
   position: absolute;
@@ -49,9 +52,18 @@
 .sidenav-bottom li {
   padding-inline-start: 0px;
 }
+.sidenav-bottom li a {
+  color: #ffffff;
+}
 
 .sidenav-bottom li:hover {
   background-color: #0046fe;
   color: #ffffff;
   transition: 0.2s;
+}
+.sidenav-active {
+  background-color: #ffffff;
+}
+.sidenav-active a {
+  color: #0046fe !important;
 }

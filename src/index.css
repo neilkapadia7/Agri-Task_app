@@ -43,12 +43,16 @@ body {
 .box1 {
   width: 24% !important;
   margin: 0 0.5% !important;
-  background-color: #f9f9f9 !important;
+  background-color: #f9f9f9;
   cursor: pointer !important;
   border-radius: 10px !important;
 }
 .box1:hover {
-  background-color: #ececec !important;
+  background-color: #ececec;
+}
+.active-box {
+  background-color: #ececec;
+  border: 2px solid #cfd6ff;
 }
 .box1-title {
   text-align: center !important;
